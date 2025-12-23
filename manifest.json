@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Zen Mode",
+  "version": "1.0.0",
+  "description": "Remove distractions from YouTube watch pages by hiding related videos and comments sections.",
+  "icons": {
+    "48": "icon.svg",
+    "96": "icon.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch?v=*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "https://www.youtube.com/*"
+  ]
+}
