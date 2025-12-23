@@ -14,7 +14,13 @@
       "run_at": "document_end"
     }
   ],
-  "permissions": [
-    "https://www.youtube.com/*"
-  ]
+  "permissions": ["https://www.youtube.com/*"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ytzenmode@calegario.lucas",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
 }
