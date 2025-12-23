@@ -12,6 +12,13 @@ function removeElements() {
     commentsElement.style.display = 'none';
     console.log('YouTube Zen Mode: Removed #comments section');
   }
+
+  // Remove the related videos after the video ends
+  const endScreenElement = document.querySelector('.ytp-fullscreen-grid-stills-container');
+  if (endScreenElement) {
+    endScreenElement.style.display = 'none';
+    console.log('YouTube Zen Mode: Removed end screen related videos');
+  }
 }
 
 // Run immediately when script loads
